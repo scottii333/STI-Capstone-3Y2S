@@ -27,6 +27,8 @@ const Loader = () => {
           ))}
         </div>
       </div>
+
+      <div className="text-white text-sm">STI Novaliches</div>
     </div>
   );
 };
