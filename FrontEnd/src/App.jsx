@@ -1,7 +1,11 @@
-// import Loader from "./assets/Components/Loader";
+import Loader from "./assets/Components/Loader";
 
 const App = () => {
-  return <div>{/* <Loader /> */}</div>;
+  return (
+    <div>
+      <Loader />
+    </div>
+  );
 };
 
 export default App;
