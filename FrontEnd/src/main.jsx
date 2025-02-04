@@ -18,15 +18,15 @@ const Router = createBrowserRouter([
         element: <Payment />,
       },
       {
-        path: "/success",
+        path: "success",
         element: <Success />,
       },
       {
-        path: "/cancel",
+        path: "cancel",
         element: <Canceled />,
       },
       {
-        path: "/decline",
+        path: "decline",
         element: <Decline />,
       },
     ],
