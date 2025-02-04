@@ -28,9 +28,9 @@ app.post("/api/create-checkout", async (req, res) => {
       phone: "+639123456789",
     },
     redirectUrl: {
-      success: `${redirectUrl}success`,
-      failure: `${redirectUrl}decline`,
-      cancel: `${redirectUrl}cancel`,
+      success: `${redirectUrl}/success`,
+      failure: `${redirectUrl}/decline`,
+      cancel: `${redirectUrl}/cancel`,
     },
     requestReferenceNumber: "123456789", // Replace with your logic for generating reference numbers
     items: [
