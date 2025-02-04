@@ -50,11 +50,11 @@ const Payment = () => {
     setLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/create-checkout",
+        "https://sti-capstone-3y2s.onrender.com/api/create-checkout",
         {
           amount: totalPrice,
           description,
-          redirectUrl: "http://localhost:5173", // Your frontend URL
+          redirectUrl: "https://sti-capstone-3-y2-s.vercel.app/", // Your frontend URL
         }
       );
 
