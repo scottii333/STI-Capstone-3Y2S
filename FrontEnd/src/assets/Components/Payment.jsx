@@ -210,7 +210,7 @@ const Payment = () => {
               CVV: <span className="font-mono">123</span>
             </p>
             <p>
-              Mand Code: <span className="font-mono">ctest1</span>
+              Mand Code: <span className="font-mono">mctest1</span>
             </p>
           </div>
         </div>
