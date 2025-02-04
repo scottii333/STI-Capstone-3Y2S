@@ -1,0 +1,10 @@
+{
+  "build": {
+    "root": "BackEnd",
+    "command": "npm install"
+  },
+  "deploy": {
+    "startCommand": "node server.mjs",
+    "restartPolicyType": "ALWAYS"
+  }
+}
