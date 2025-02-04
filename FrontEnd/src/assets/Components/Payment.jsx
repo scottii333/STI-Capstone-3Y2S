@@ -54,7 +54,7 @@ const Payment = () => {
         {
           amount: totalPrice,
           description,
-          redirectUrl: "https://sti-capstone-3-y2-s.vercel.app/", // Your frontend URL
+          redirectUrl: "https://sti-capstone-3-y2-s.vercel.app", // Your frontend URL
         }
       );
 
