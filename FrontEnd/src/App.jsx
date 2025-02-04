@@ -1,26 +1,26 @@
-import { useEffect } from "react";
+// App.jsx
+import { useEffect, useState } from "react";
+import { Outlet } from "react-router-dom";
 import Loader from "./assets/Components/Loader";
 import MainPage from "./assets/Main/MainPage";
-import { useState } from "react";
 
 const App = () => {
-  // State to track whether Main has loaded
-  const [isMainLoaded, setIsMainLoaded] = useState(false);
+  const [isMainLoaded, setIsMainLoaded] = useState(true);
 
-  // Simulate the loading process of Main
+  // Simulate the loading process of Main (adjust timing as needed)
   useEffect(() => {
-    // Simulating an async operation like fetching data
     const loadMain = setTimeout(() => {
-      setIsMainLoaded(true); // Mark Main as loaded after 2 seconds
+      setIsMainLoaded(true);
     }, 12000);
-
-    return () => clearTimeout(loadMain); // Cleanup timeout
+    return () => clearTimeout(loadMain);
   }, []);
+
   return (
     <div>
       {isMainLoaded ? (
         <div>
           <MainPage />
+          <Outlet />
         </div>
       ) : (
         <Loader />
