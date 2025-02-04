@@ -14,7 +14,7 @@ const Router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <Payment />,
       },
       {
